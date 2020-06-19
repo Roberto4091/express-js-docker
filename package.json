@@ -14,7 +14,9 @@
     "sequelize": "babel-node ./node_modules/.bin/sequelize",
     "migrate": "npm run sequelize -- db:migrate",
     "migrate:undo": "npm run sequelize -- db:migrate:undo",
-    "seed": "npm run sequelize -- db:seed:all"
+    "model:generate": "npm run sequelize -- model:generate",
+    "seed": "npm run sequelize -- db:seed:all",
+    "seed:generate": "npm run sequelize -- seed:generate"
   },
   "repository": {
     "type": "git",

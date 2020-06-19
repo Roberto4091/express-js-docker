@@ -52,3 +52,29 @@ $ docker-compose -f docker/docker-compose.yml up
 ```
 
 Then go to `http://localhost:8000`.
+
+## Other commands
+
+Create new model and migration
+
+```bash
+$ docker-compose -f docker/docker-compose.yml run example_dev npm run model:generate -- --name MODEL_NAME --attributes THE_ATTRIBUTE:TYPE
+```
+
+Apply migrations
+
+```bash
+$ docker-compose -f docker/docker-compose.yml run example_dev npm run migrate
+```
+
+Create seed
+
+```bash
+$ docker-compose -f docker/docker-compose.yml run example_dev npm run seed:generate -- --name SEED_NAME
+```
+
+Run seeds
+
+```bash
+$ docker-compose -f docker/docker-compose.yml run example_dev npm run seed
+```
